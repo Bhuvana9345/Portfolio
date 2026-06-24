@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhuvaneswari T | Java Full-Stack Developer Portfolio</title>
+    <!-- Meta Descriptions for SEO -->
+    <meta name="description" content="Professional portfolio of Bhuvaneswari T, an aspiring Java Full-Stack Developer. Check out projects built with Spring Boot, React, MySQL, and secure REST APIs.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Backdrop Blur Glow Blobs (Premium Design Element) -->
+    <div class="glow-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">BHUVANESWARI<span>.T</span></a>
+            <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+                <i data-lucide="menu"></i>
+            </button>
+            <nav class="nav-links" id="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="Resume.pdf" target="_blank" class="nav-link" id="nav-resume-btn">Resume</a>
+                <a href="#contact" class="nav-link nav-btn">Contact Me</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <span class="hero-tagline">Hello, World! I'm</span>
+                <h1 class="hero-title">Bhuvaneswari T</h1>
+                <div class="typing-container">
+                    <span class="static-txt">Aspiring </span>
+                    <span class="dynamic-txt" id="typewriter"></span>
+                </div>
+                <p class="hero-description">
+                    BCA graduate specialized in building robust web applications using Java 17, Spring Boot, React.js, and MySQL. Eager to solve challenging problems and build scalable, user-centric software.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                    <a href="Resume.pdf" target="_blank" class="btn btn-secondary" id="hero-resume-btn">
+                        <span>View Resume</span>
+                        <i data-lucide="file-text"></i>
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/Bhuvana9345" target="_blank" rel="noopener noreferrer" title="GitHub" id="github-link">
+                        <i data-lucide="github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/bhuvaneswari-t-0495333aa" target="_blank" rel="noopener noreferrer" title="LinkedIn" id="linkedin-link">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                    <a href="mailto:tbhuvaneshwari9597@gmail.com" title="Email" id="email-link">
+                        <i data-lucide="mail"></i>
+                    </a>
+                    <a href="tel:+919345755790" title="Call" id="phone-link">
+                        <i data-lucide="phone"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <a href="#about" aria-label="Scroll down to About section">
+                    <span class="mouse-icon"><span class="wheel"></span></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section scroll-reveal">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-info">
+                        <h3 class="about-subtitle">Building full-stack software from the ground up</h3>
+                        <p class="about-text">
+                            I am a detail-oriented BCA graduate specializing in <strong>Java Full-Stack Development</strong>. I have hands-on experience building and deploying end-to-end web applications using Java 17, Spring Boot, React.js, and MySQL. From securing API endpoints with JWT to implementing real-time messaging using WebSockets, I thrive on solving backend logic and connecting it with responsive frontends.
+                        </p>
+                        <p class="about-text">
+                            Proficient in Object-Oriented Programming (OOP) concepts, MVC architecture, and SOLID design principles, I focus on writing clean, scalable, and maintainable code. I am eager to contribute my technical strengths, problem-solving skills, and fast learning ability to product-driven engineering teams.
+                        </p>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <i data-lucide="code-2"></i>
+                                <span>4+ Web Projects Completed</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i data-lucide="award"></i>
+                                <span>Java Full-Stack Certified</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i data-lucide="graduation-cap"></i>
+                                <span>BCA Graduate (74% Aggregate)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section scroll-reveal">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">A breakdown of tools, frameworks, and languages in my developer toolkit.</p>
+                
+                <div class="skills-grid">
+                    <!-- Languages -->
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <i data-lucide="languages" class="skill-icon"></i>
+                            <h3>Languages</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li>Java (17)</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>SQL</li>
+                            <li>Python</li>
+                        </ul>
+                    </div>
+
+                    <!-- Backend Frameworks -->
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <i data-lucide="server" class="skill-icon"></i>
+                            <h3>Backend</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li>Spring Boot</li>
+                            <li>Spring MVC</li>
+                            <li>REST APIs</li>
+                            <li>WebSockets (STOMP)</li>
+                            <li>Microservices (Basics)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Frontend Frameworks -->
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <i data-lucide="layout" class="skill-icon"></i>
+                            <h3>Frontend</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li>React.js</li>
+                            <li>React Hooks</li>
+                            <li>HTML5 / CSS3</li>
+                            <li>Bootstrap 5</li>
+                            <li>Responsive UI Design</li>
+                        </ul>
+                    </div>
+
+                    <!-- Databases & ORM -->
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <i data-lucide="database" class="skill-icon"></i>
+                            <h3>Databases & ORM</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li>MySQL</li>
+                            <li>Spring Data JPA</li>
+                            <li>JDBC</li>
+                            <li>SQL Query Design</li>
+                        </ul>
+                    </div>
+
+                    <!-- Security & Auth -->
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <i data-lucide="shield-check" class="skill-icon"></i>
+                            <h3>Security & Auth</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li>JWT (JSON Web Tokens)</li>
+                            <li>BCrypt Hashing</li>
+                            <li>Session Management</li>
+                            <li>CORS Policies</li>
+                            <li>Input Validation</li>
+                        </ul>
+                    </div>
+
+                    <!-- Architecture & Tools -->
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <i data-lucide="cpu" class="skill-icon"></i>
+                            <h3>Arch & Tools</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li>MVC, DAO & DTO Patterns</li>
+                            <li>OOP & SOLID Principles</li>
+                            <li>Git & GitHub</li>
+                            <li>Postman & REST clients</li>
+                            <li>Maven, JUnit & Mockito</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section scroll-reveal">
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">Real-world applications showcasing core backend services, rich interfaces, and secure data layers.</p>
+
+                <!-- Project Filters -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="java">Java & Spring</button>
+                    <button class="filter-btn" data-filter="react">React</button>
+                    <button class="filter-btn" data-filter="js">Vanilla JS</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <!-- Project 1: LinguaChat -->
+                    <div class="project-card" data-category="java">
+                        <div class="project-content">
+                            <span class="project-tag">Java / Spring Boot / WebSocket</span>
+                            <h3 class="project-card-title">LinguaChat – Real-Time Multilingual Chat</h3>
+                            <p class="project-desc">
+                                A real-time, bi-directional web chat application with automatic instant translation, WebRTC signaling, and user authentication.
+                            </p>
+                            <div class="project-bullet-container">
+                                <div class="project-bullet">
+                                    <i data-lucide="check-circle" class="bullet-icon"></i>
+                                    <span>Built messaging flow with <strong>WebSockets (STOMP)</strong> for real-time text delivery.</span>
+                                </div>
+                                <div class="project-bullet">
+                                    <i data-lucide="check-circle" class="bullet-icon"></i>
+                                    <span>Integrated instant message translation across 5 languages (EN, HI, TA, FR, ES).</span>
+                                </div>
+                                <div class="project-bullet">
+                                    <i data-lucide="check-circle" class="bullet-icon"></i>
+                                    <span>Secured backend endpoint operations using stateless **JWT** credentials.</span>
+                                </div>
+                                <div class="project-bullet">
+                                    <i data-lucide="check-circle" class="bullet-icon"></i>
+                                    <span>Implemented voice/video signaling via <strong>WebRTC</strong> with typing and status feeds.</span>
+                                </div>
+                            </div>
+                            <div class="project-tech">
+                                <span>Java 17</span>
+                                <span>Spring Boot</span>
+                                <span>WebSocket</span>
+                                <span>MySQL</span>
+                                <span>JWT</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Bhuvana9345/Chat_application" target="_blank" rel="noopener noreferrer" class="proj-link">
+                                    <i data-lucide="github"></i> Code
+                                </a>
+                                <a href="https://web-production-5de869.up.railway.app/login.html" target="_blank" rel="noopener noreferrer" class="proj-link demo-link">
+                                    <i data-lucide="external-link"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Bhuvi Style -->
+                    <div class="project-card" data-category="java">
+                        <div class="project-content">
+                            <span class="project-tag">Java / Spring / OpenAI</span>
+                            <h3 class="project-card-title">Bhuvi Style – AI E-Commerce Platform</h3>
+                            <p class="project-desc">
+                                A secure e-commerce application equipped with an interactive AI recommendation engine, checkout sequences, and administrator portals.
+                            </p>
+                            <div class="project-bullet-container">
+                                <div class="project-bullet">
+                                    <i data-lucide="check-circle" class="bullet-icon"></i>
+                                    <span>Engineered full shopping experience, shopping carts, wishlist items, and admin views.</span>
+                                </div>
+                                <div class="project-bullet">
+                                    <i data-lucide="check-circle" class="bullet-icon"></i>
+                                    <span>Integrated **OpenAI GPT API** for an outfits/product advisor based on user browse logs.</span>
+                                </div>
+                                <div class="project-bullet">
+                                    <i data-lucide="check-circle" class="bullet-icon"></i>
+                                    <span>Protected checkout endpoints and tables using **BCrypt hashing** and stateless **JWTs**.</span>
+                                </div>
+                                <div class="project-bullet">
+                                    <i data-lucide="check-circle" class="bullet-icon"></i>
+                                    <span>Mapped relationships and tables in **MySQL** database with **Spring Data JPA**.</span>
+                                </div>
+                            </div>
+                            <div class="project-tech">
+                                <span>Java 17</span>
+                                <span>Spring Boot 3</span>
+                                <span>MySQL</span>
+                                <span>OpenAI API</span>
+                                <span>JWT</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Bhuvana9345/E-Commerce-website" target="_blank" rel="noopener noreferrer" class="proj-link">
+                                    <i data-lucide="github"></i> Code
+                                </a>
+                                <a href="https://e-commerce-website-nsqz.onrender.com/" target="_blank" rel="noopener noreferrer" class="proj-link demo-link">
+                                    <i data-lucide="external-link"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: CampusERP -->
+                    <div class="project-card" data-category="react">
+                        <div class="project-content">
+                            <span class="project-tag">React / Spring Boot / MySQL</span>
+                            <h3 class="project-card-title">CampusERP – Student Management System</h3>
+                            <p class="project-desc">
+                                A comprehensive enterprise system designed to automate registrations, role-based records, transactions, and metrics reporting.
+                            </p>
+                            <div class="project-bullet-container">
+                                <div class="project-bullet">
+                                    <i data-lucide="check-circle" class="bullet-icon"></i>
+                                    <span>Managed student and staff accounts (200+) through secure **Role-Based Access Control**.</span>
+                                </div>
+                                <div class="project-bullet">
+                                    <i data-lucide="check-circle" class="bullet-icon"></i>
+                                    <span>Constructed transaction processes outputting PDF receipts (**iText PDF**) and excel sheets (**Apache POI**).</span>
+                                </div>
+                                <div class="project-bullet">
+                                    <i data-lucide="check-circle" class="bullet-icon"></i>
+                                    <span>Built administrative performance layouts with dynamic visuals using **Chart.js**.</span>
+                                </div>
+                                <div class="project-bullet">
+                                    <i data-lucide="check-circle" class="bullet-icon"></i>
+                                    <span>Engineered responsive interface panels using **React.js** hooks and fast **Vite** compile paths.</span>
+                                </div>
+                            </div>
+                            <div class="project-tech">
+                                <span>React.js</span>
+                                <span>Spring Boot 3</span>
+                                <span>MySQL</span>
+                                <span>iText PDF</span>
+                                <span>Chart.js</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Bhuvana9345/student_management_system" target="_blank" rel="noopener noreferrer" class="proj-link">
+                                    <i data-lucide="github"></i> Code
+                                </a>
+                                <a href="https://student-management-system-pi-swart.vercel.app" target="_blank" rel="noopener noreferrer" class="proj-link demo-link">
+                                    <i data-lucide="external-link"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: FlavorVault -->
+                    <div class="project-card" data-category="js">
+                        <div class="project-content">
+                            <span class="project-tag">Vanilla JS / CSS Glassmorphism</span>
+                            <h3 class="project-card-title">FlavorVault – Glassmorphic Review Clone</h3>
+                            <p class="project-desc">
+                                A restaurant discovery clone with dark theme glassmorphism styling, client-side database caching, and responsive routing.
+                            </p>
+                            <div class="project-bullet-container">
+                                <div class="project-bullet">
+                                    <i data-lucide="check-circle" class="bullet-icon"></i>
+                                    <span>Constructed user CRUD operations and catalog caches using browser **LocalStorage**.</span>
+                                </div>
+                                <div class="project-bullet">
+                                    <i data-lucide="check-circle" class="bullet-icon"></i>
+                                    <span>Created a modern responsive dark UI utilizing vanilla HTML/CSS and **Glassmorphism**.</span>
+                                </div>
+                                <div class="project-bullet">
+                                    <i data-lucide="check-circle" class="bullet-icon"></i>
+                                    <span>Programmed a debounced filtering algorithm searching by cuisine, ratings, and location.</span>
+                                </div>
+                                <div class="project-bullet">
+                                    <i data-lucide="check-circle" class="bullet-icon"></i>
+                                    <span>Protected review creation pages through client-side routing states built with vanilla JS.</span>
+                                </div>
+                            </div>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript ES6+</span>
+                                <span>LocalStorage</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Bhuvana9345/zomato-rating-system" target="_blank" rel="noopener noreferrer" class="proj-link">
+                                    <i data-lucide="github"></i> Code
+                                </a>
+                                <a href="https://bhuvana9345.github.io/zomato-rating-system" target="_blank" rel="noopener noreferrer" class="proj-link demo-link">
+                                    <i data-lucide="external-link"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Certifications Section -->
+        <section id="education" class="education-section scroll-reveal">
+            <div class="container">
+                <h2 class="section-title">Education & Credentials</h2>
+                <div class="edu-cert-grid">
+                    
+                    <!-- Education Column -->
+                    <div class="edu-column">
+                        <h3 class="subsection-title"><i data-lucide="graduation-cap"></i> Education</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <span class="timeline-date">2023 – 2026</span>
+                                <h4 class="timeline-title">Bachelor of Computer Applications (BCA)</h4>
+                                <p class="timeline-org">Bharathidasan University, Tiruchirappalli</p>
+                                <p class="timeline-score"><strong>Score:</strong> 74% Aggregate</p>
+                                <p class="timeline-details">
+                                    <strong>Relevant Coursework:</strong> Data Structures, Database Management Systems (DBMS), Object-Oriented Programming (OOP), Operating Systems, Computer Networks, Web Technologies.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications Column -->
+                    <div class="cert-column">
+                        <h3 class="subsection-title"><i data-lucide="award"></i> Certifications & Hackathons</h3>
+                        <div class="cert-grid">
+                            <div class="cert-card">
+                                <div class="cert-header">
+                                    <i data-lucide="badge-check" class="cert-icon"></i>
+                                    <h4>Java Full Stack Developer</h4>
+                                </div>
+                                <p class="cert-meta">Systech Group | 2026</p>
+                            </div>
+
+                            <div class="cert-card">
+                                <div class="cert-header">
+                                    <i data-lucide="badge-check" class="cert-icon"></i>
+                                    <h4>OOP (Python)</h4>
+                                </div>
+                                <p class="cert-meta">Infosys Springboard | 2024</p>
+                            </div>
+
+                            <div class="cert-card">
+                                <div class="cert-header">
+                                    <i data-lucide="badge-check" class="cert-icon"></i>
+                                    <h4>Advanced Python Programming</h4>
+                                </div>
+                                <p class="cert-meta">Soft & Soft Computers | 2024</p>
+                            </div>
+
+                            <div class="cert-card">
+                                <div class="cert-header">
+                                    <i data-lucide="badge-check" class="cert-icon"></i>
+                                    <h4>Web Development Fundamentals</h4>
+                                </div>
+                                <p class="cert-meta">TNSDC | 2023</p>
+                            </div>
+
+                            <div class="cert-card">
+                                <div class="cert-header">
+                                    <i data-lucide="trophy" class="cert-icon"></i>
+                                    <h4>Hackathon Project-Based Learning</h4>
+                                </div>
+                                <p class="cert-meta">ICT Academy | 2024</p>
+                            </div>
+
+                            <div class="cert-card">
+                                <div class="cert-header">
+                                    <i data-lucide="activity" class="cert-icon"></i>
+                                    <h4>Learnathon Participant</h4>
+                                </div>
+                                <p class="cert-meta">ICT Academy | 2024</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss career opportunities, software projects, or coding collaborations.</p>
+
+                <div class="contact-grid">
+                    <!-- Contact Cards -->
+                    <div class="contact-info-cards">
+                        <div class="contact-info-card">
+                            <i data-lucide="mail"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:tbhuvaneshwari9597@gmail.com">tbhuvaneshwari9597@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <i data-lucide="phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+919345755790">+91 93457 55790</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <i data-lucide="map-pin"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Chennai, Tamil Nadu, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper">
+                        <form id="portfolio-contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="form-name">Name</label>
+                                <input type="text" id="form-name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Email</label>
+                                <input type="email" id="form-email" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <input type="text" id="form-subject" placeholder="Job Opportunity" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <textarea id="form-message" rows="5" placeholder="Hi Bhuvaneswari, I saw your portfolio..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                                <span>Send Message</span>
+                                <i data-lucide="send"></i>
+                            </button>
+                        </form>
+
+                        <!-- Form Feedback Modal/Overlay -->
+                        <div class="feedback-overlay" id="form-feedback-overlay">
+                            <div class="feedback-content">
+                                <i data-lucide="check-circle-2" class="success-icon"></i>
+                                <h3>Thank you!</h3>
+                                <p>Your message has been sent successfully. I will get back to you shortly.</p>
+                                <button type="button" class="btn btn-primary" id="feedback-close-btn">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2026 Bhuvaneswari T. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/Bhuvana9345" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i data-lucide="github"></i>
+                </a>
+                <a href="https://linkedin.com/in/bhuvaneswari-t-0495333aa" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i data-lucide="linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lucide Icons Library (Reliable Fast Version) -->
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.439.0/dist/umd/lucide.min.js"></script>
+    <script>
+        // Initialize Lucide icons immediately after library loads
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+        }
+    </script>
+    <!-- Custom script -->
+    <script src="script.js"></script>
+</body>
+</html>
