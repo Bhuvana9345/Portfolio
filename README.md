@@ -9,7 +9,7 @@ https://github.com/Bhuvana9345/Portfolio
 
 ##Live Demo Link
 
-
+https://bhuvana9345.github.io/Portfolio/
 
 ## 🚀 Tech Stack & Design
 
